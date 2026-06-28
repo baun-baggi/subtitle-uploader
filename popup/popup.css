@@ -1,0 +1,72 @@
+:root {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+html,
+body {
+  width: 500px;
+  background-color: rgb(211, 211, 211);
+  color: rgb(0, 0, 0);
+}
+
+.line{
+    margin-top: 8px;
+}
+button{
+    background-color: rgb(180, 180, 180);
+    border: 1px solid black;
+    color: black;
+    padding: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #f0f0f0;
+}
+button:active{
+    background-color: #ddd;
+}
+input{
+    border: 1px solid black;
+    height: 16px;
+    width: 200px;
+}
+#video_elements_list{
+    margin-top: 8px;
+}
+.video_list_item{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 2px solid black;
+    margin-top: -1px;
+    padding: 3px;
+    cursor: pointer;
+}
+#video_elements_list .hovered_video{
+    border: 2px solid rgb(56, 100, 56);
+}
+#video_elements_list .selected_video{
+    border: 2px solid rgb(103, 209, 126);
+}
+#no_videos{
+    border: 2px solid black;
+    padding: 5px;
+}
+.color_container {
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-top: 8px;
+    display: flex;            /* Activates flexbox layout */
+    flex-direction: row;      /* Places items horizontally (default) */
+    gap: 15px;                /* Adds space between horizontal items */
+    justify-content: center;  /* Centers items (can use space-between, flex-start) */
+    align-items: center;
+}
+.color_item {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}

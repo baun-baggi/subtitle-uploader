@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="popup.css"/>
+    </head>
+    <body>
+        <div class="line">
+            Video players (click to add/remove subtitles):
+        </div>
+        <div id="video_elements_list">
+        </div>
+        <div class="line">
+            Time offset: <input type="number" step="0.01" id="subtitle_time_offset_input" value="0"> seconds
+        </div>
+        <div class="line">
+            Position offset: <input type="number" id="subtitle_position_offset_input" value="-100"> px
+        </div>
+        <div class="line">
+            Font size: <input type="number" id="subtitle_font_size_input" value="50"> px
+        </div>
+        <div class="line">
+            Font: <input type="text" id="subtitle_font_input" value="Arial">
+        </div>
+        <div class="color_container">
+            <div class="color_item">
+                <label for="font_color_picker">Font colour</label>
+                <div id="font_color_picker"></div>
+            </div>
+        
+            <div class="color_item">
+                <label for="background_color_picker">Background colour</label>
+                <div id="background_color_picker"></div>
+            </div>
+        </div>
+        <script src="libs/iro.min.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>

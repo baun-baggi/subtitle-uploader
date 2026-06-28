@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Subtitle Uploader",
+    "version": "1.0",
+    "description": "Upload subtitles to a detected video element.",
+    "homepage_url": "https://github.com/baun-baggi/subtitle-uploader",
+    "icons": {
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "subtitle-uploader@localhost.com"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "<all_urls>",
+        "storage",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "icons/icon-32.png",
+        "default_title": "Subtitle Uploader"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content_scripts/subtitles.js"]
+        }
+    ]
+}
